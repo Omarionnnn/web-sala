@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.home {
+  background-image: url('../assets/images/FondoFuego_Tilling-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  }
+
+    /* Fondo detrás de la sección events-list */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-image: url('../assets/images/FondoFuego_Tilling-1.png');
+  background-size: 100% 100vh;
+  background-repeat: repeat-y;
+  background-position: center;
+  opacity: 0.7;
+  z-index: 0;
+}
+  
+  /* Fondo de fuego */
+  /* Fondo hasta events-list */
+.home .events-banner,
+.home .events-list {
+  position: relative;
+  z-index: 1; /* Trae estas secciones al frente para que la imagen de fondo no interfiera */
+}
+  
+  /* Eventos */
+  .events-banner {
+    text-align: center;
+    max-width: 1000px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+
+.events-banner h2 {
+    font-size: 4rem;
+    padding: 60px;
+    color: #fff;
+    font-family: 'Metal Mania', cursive;
+} 
+
+  /* Lista de eventos */
+
+.events-list {
+  justify-content: center;
+  width: 70%;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding: 3rem;
+  margin: 6rem auto;
+  border-radius: 2rem;
+  z-index: 2;
+}
+
+.events-list p {
+  font-size: 40px;
+  font-family: 'Metal Mania', cursive;
+}
+
+  .events-banner img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .no-more-events {
+    text-align: center;
+  }
+  
+  .view-all-events {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  /* La Sala */
+  .the-room {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .the-room-content {
+    max-width: 600px;
+    margin-right: 20px;
+    margin-left: 70px;
+  }
+  
+  .the-room-content h2 {
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+  }
+  
+  .the-room-content p {
+    font-family: 'Josefin Sans';
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .custom-carousel {
+    width: 100% !important;
+    max-height: 400px; /* Fija la altura máxima del carrusel */
+    overflow: hidden; /* Evita que se expanda más allá de los límites */
+  }
+  
+  .carousel-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 100%; /* Asegura que las imágenes se alineen dentro del contenedor */
+  }
+  
+  .carousel-image {
+    height: auto !important;
+  max-height: 300px; /* Controla la altura máxima de las imágenes */
+  border: 2px solid #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.3s ease !important;
+  }
+  
+  .carousel-image.small {
+    width: 40% !important;
+  }
+  
+  .carousel-image.medium {
+    width: 48% !important;
+  }
+  
+  .carousel-image.large {
+    width: 55% !important;
+  }
+  
+  /* Servicios */
+  .services {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .services h2 {
+    width: 70%;
+    font-size: 4rem;
+    margin: 0 auto 20px auto;
+    color: #fff;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+  
+  .service-item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .service-item.red {
+    background: linear-gradient(135deg, #b30000, #660000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-item.red h3 {
+    font-family: 'Metal Mania', cursive;
+    color: #fff;
+  }
+
+  .service-item.red p {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .service-item.purple {
+    background: linear-gradient(135deg, #800080, #4b007f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-item.purple h3 {
+    font-family: 'Metal Mania', cursive;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .service-logo {
+    width: 360px;
+    margin-bottom: 10px;
+  }
+  
+  /*Info*/
+  .spectrum-info {
+    margin-top: 40px;
+    background: linear-gradient(to top, #333, #000);
+    color: #fff;
+}
+
+.spectrum-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.spectrum-text {
+  font-family: 'Josefin Sans';
+  font-size: 24px;
+    flex: 1;
+    text-align: center;
+}
+
+.spectrum-logo-container {
+  width: 100%;
+}
+
+.spectrum-logo {
+    width: 500px;
+}
+
+.spectrum-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.spectrum-highlight {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Metal Mania', cursive;
+}
+
+.spectrum-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.spectrum-image {
+  width: 100%;
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  max-width: none; /* Asegura que no haya restricciones de ancho */
+  border-radius: 10px; /* Añade bordes redondeados si lo deseas */
+}

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap'); /* O una fuente similar */
+
+h2, .nav-link, .event-item h3 {
+  font-family: 'Metal Mania', cursive;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 24px;
+}
+
+.nav-link.active {
+  color: #ffc107 !important;
+}
+
+.nav-separator {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 100% !important;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #000 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  padding: 10px 0;
+  opacity: 0.9;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 180px;
+  cursor: pointer;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  align-items: center;
+  margin-left: 150px;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5px 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 90px;
+}
+
+
+/* Estilos para la sección de reseñas */
+.reviews-section {
+  text-align: center;
+  background-color: #000;
+  color: #ffc107;
+  padding: 40px 0;
+}
+
+.reviews-section h2 {
+  font-size: 3rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  font-family: 'Metal Mania', cursive;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review-card {
+  background-color: #222;
+  color: #fff;
+  padding: 25px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-weight: bold;
+  color: #ffc107;
+  margin-top: 5px;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 5px 0;
+}
+
+.review-stars {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.review-body {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-body p:first-of-type {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.review-stars {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/*footer*/
+.footer {
+  background: linear-gradient(to top, #333, #000);
+  color: #fff;
+  text-align: center;
+}
+
+.white-line {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  margin: 20px 0; 
+}
+
+.footer-logo {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.footer-top {
+  text-align: center;
+  color: #ffcc00;
+  padding: 80px;
+}
+
+.footer-top h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Metal Mania', cursive;
+}
+
+.footer-top p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.footer-top button {
+  border: 2px solid #ffcc00;
+  background-color: transparent;
+  color: #ffcc00;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-top button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s;
+  text-decoration: none;
+  border: none;
+}
+
+.social-icon:hover {
+  color: #ffc107;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+  color: #fff;
+  align-items: center;
+}
+
+.footer-middle div {
+  max-width: 250px;
+  text-align: center;
+}
+
+.footer-middle h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-family: 'Metal Mania', cursive;
+  color: #fff;
+}
+
+.footer-middle p, .footer-middle a {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 5px 0;
+}
+
+.footer-middle a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.footer-middle a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin: 0;
+  background-color: #fff;
+}
+
+.footer-banner {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  display: block;
+}

@@ -1,0 +1,88 @@
+.discord-page {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .upcoming-events {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+    .discord-logo-container {
+      position: relative;
+      background-image: url("src/assets/images/pngtree-dj-mixing-up-a-with-the-lights-on-ceiling-image_15612216.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 200px 100px;
+  }
+
+  .discord-logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+  .discord-logo {
+    position: relative;
+    z-index: 1;
+    width: 700px;
+}
+  
+  .past-events {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .event-card {
+    display: flex;
+    align-items: center;
+    background: #333;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .event-date {
+    font-size: 1.2em;
+    color: #ffc107;
+    text-align: center;
+    padding-right: 20px;
+  }
+  
+  .event-info {
+    flex: 1;
+  }
+  
+  .event-info h3 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .event-info p {
+    margin-top: 10px;
+    color: #ddd;
+  }
+  
+  .event-info button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .event-image img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
